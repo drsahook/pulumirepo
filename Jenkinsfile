@@ -4,10 +4,10 @@ pipeline {
     stages {
         stage ("Checkout code") {
             steps {
-                git url: "git@github.com:drsahook/pulumirepo.git",
+                git url: "https://github.com/drsahook/pulumirepo.git",
                     // Set your credentials id value here.
                     // See https://jenkins.io/doc/book/using/using-credentials/#adding-new-global-credentials
-                    credentialsId: "d606e6ae-a550-4baa-8efd-6686a0281966",
+                    credentialsId: "045af0bb-7107-49a3-b963-4cb48b29c80e",
                     // You could define a new stage that specifically runs for, say, feature/* branches
                     // and run only "pulumi preview" for those.
                     branch: "main"
